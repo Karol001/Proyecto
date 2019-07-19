@@ -1,0 +1,184 @@
+{% extends 'base/base.html' %} {% block content %}
+<br>
+<div>
+    <h1 align="center" id="ti">Contrato de Prestación de Servicios</h1>
+</div>
+
+<div class="container">
+<form method="post">
+    {% csrf_token %}
+
+
+        <div class="form-group">
+            <label for="form4.Razon_social_natural.name">{{form4.Razon_social_natural.label}}</label>
+            {{form4.Razon_social_natural}}
+        </div>
+ 
+        <div class="form-group">
+            <label for="">{{form4.Cedula_contratante_natural.label}}</label>
+            {{form4.Cedula_contratante_natural}}
+        </div>
+
+         <div class="form-group">
+            <label for="">{{form4.Ciudad_contratante_natural.label}}</label>
+            {{form4.Ciudad_contratante_natural}}
+        </div> 
+
+        <div class="form-group">
+            <label for="">{{form4.Fecha_nacimiento_contratante_natural.label}}</label>
+            {{form4.Fecha_nacimiento_contratante_natural}}
+        </div>
+ 
+         <div class="form-group">
+            <label for="">{{form4.Lugar_nacimiento_contratante_natural.label}}</label>
+            {{form4.Lugar_nacimiento_contratante_natural}}
+        </div> 
+
+         <div class="form-group">
+            <label for="">{{form4.Nombre_natural.label}}</label>
+            {{form4.Nombre_natural}}
+        </div> 
+
+        <div class="form-group">
+            <label for="">{{form4.Cedula_contratista.label}}</label>
+            {{form4.Cedula_contratista}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Ciudad_contratista.label}}</label>
+            {{form4.Ciudad_contratista}}
+        </div> 
+
+         <div class="form-group">
+            <label for="">{{form4.Fecha_nacimiento_contratista.label}}</label>
+            {{form4.Fecha_nacimiento_contratista}}
+        </div> 
+
+        <div class="form-group">
+            <label for="">{{form4.Lugar_nacimiento_contratista.label}}</label>
+            {{form4.Lugar_nacimiento_contratista}}
+        </div> 
+
+        <div class="form-group">
+            <label for="">{{form4.Actividad_profesional_contratista.label}}</label>
+            {{form4.Actividad_profesional_contratista}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Objeto_social_contratista.label}}</label>
+            {{form4.Objeto_social_contratista}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Objeto_social_contratante.label}}</label>
+            {{form4.Objeto_social_contratante}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Dedicacion_profesional_natural.label}}</label>
+            {{form4.Dedicacion_profesional_natural}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Finalidad.label}}</label>
+            {{form4.Finalidad}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Servicio_manera_general.label}}</label>
+            {{form4.Servicio_manera_general}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Servicio_prestado_contratista.label}}</label>
+            {{form4.Servicio_prestado_contratista}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Paragrafo_primero.label}}</label>
+            {{form4.Paragrafo_primero}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Contraprestacion_numeros.label}}</label>
+            {{form4.Contraprestacion_numeros}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Plazo_sugerido_dias.label}}</label>
+            {{form4.Plazo_sugerido_dias}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Banco.label}}</label>
+            {{form4.Banco}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Tipo_cuenta.label}}</label>
+            {{form4.Tipo_cuenta}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Numero_cuenta.label}}</label>
+            {{form4.Numero_cuenta}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Nombre_titular.label}}</label>
+            {{form4.Nombre_titular}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Cedula_titular.label}}</label>
+            {{form4.Cedula_titular}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Tipo_con.label}}</label>
+            {{form4.Tipo_con}}
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <label for="">{{form4.Duracion_numeros.label}}</label>
+                {{form4.Duracion_numeros}}
+            </div>
+            <div class="col-sm-6">
+                <label for="">{{form4.Anos_meses.label}}</label>
+                {{form4.Anos_meses}}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Paragrafo_prueba_opcional.label}}</label>
+            {{form4.Paragrafo_prueba_opcional}}
+        </div>
+
+        <div class="form-group">
+            <label for="{{form4.Dias_prueba_numeros.name}}">{{form4.Dias_prueba_numeros.label}}</label>
+            {{form4.Dias_prueba_numeros}}
+        </div>
+
+        <div class="form-group">
+            <label for="{{form4.Fecha_prueba.name}}">{{form4.Fecha_prueba.label}}</label>
+            {{form4.Fecha_prueba}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Direccion_Fisica_contratante.label}}</label>
+            {{form4.Direccion_Fisica_contratante}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form4.Correo_electronico_contratante.label}}</label>
+            {{form4.Correo_electronico_contratante}}
+        </div>
+
+        <button type="submit" class="btn btn-outline-danger btn-block mb-5">Descargar Contrato en pdf</button>
+        
+    </form>
+</div>
+
+{% endblock %}

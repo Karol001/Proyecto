@@ -1,0 +1,11 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+{% block content %}
+ <link rel="icon" type="image/png" href="{% static 'login/images/logito.png' %}" />
+    <h2>Se a cerrado la sesión</h2>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <a href="{% url 'login' %}">Volver a iniciar sesión</a>
+        </small>
+    </div>
+{% endblock content %}

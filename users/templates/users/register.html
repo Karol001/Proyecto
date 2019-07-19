@@ -1,0 +1,76 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title >Registro</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="{% static 'login/images/logito.png' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'Regis/css/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Regis/css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'login/css/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'login/css/main.css' %}">
+   
+</head>
+
+<body>
+
+    <div class="bg-contact2" style="background-image: url({% static 'login/images/paisaje.jpg' %});">
+        <div class="container-contact2">
+            <div class="wrap-contact2">
+                <form method="POST">
+                    {% csrf_token %}
+
+                    <span style="text-align: center;" class="login100-form-title p-b-59">
+                        REGISTRATE
+                    </span>
+
+                    <div class="form-group">
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Usuario is required">
+                        <span class="label-input100">Usuario</span>
+                        <input class="input100" type="text" name="username" placeholder="Name...">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<span class="label-input100">Email</span>
+						<input class="input100" type="text" name="email" placeholder="Email addess...">
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<span class="label-input100">Contraseña</span>
+						<input class="input100" type="Password" name="password1" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
+						<span class="label-input100">Repite la contraseña</span>
+						<input class="input100" type="Password" name="password2" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
+
+
+                   <div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button type="submit" class="login100-form-btn" value="{{ next }}">
+								Registrar
+							</button>
+						</div>
+
+                    <div class="border-top pt-3">
+                        <small class="text-muted">
+                            ¿Ya tienes una cuenta? <a class="ml-2" href="{% url 'login' %}">Iniciar sesión</a>
+                        </small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>

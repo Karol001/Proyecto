@@ -1,0 +1,31 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inicio</title>
+    <link rel="icon" type="image/png" href="{% static 'login/images/logito.png' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'carrusel/css/estilos.css' %}">
+
+
+</head>
+<body>
+
+    <div class="content-all">
+        <div class="content-carrousel">
+            <figure><img src="{% static 'carrusel/image/img1.jpg' %}"></figure>
+            <figure><img src="{% static 'carrusel/image/img2.jpg' %}"></figure>
+            <figure><img src="{% static 'carrusel/image/img3.jpg' %}"></figure>
+            <figure><img src="{% static 'carrusel/image/img4.jpg' %}"></figure>
+            <figure><img src="{% static 'carrusel/image/img5.jpg' %}"></figure>
+            <figure><img src="{% static 'carrusel/image/img6.jpg' %}"></figure>
+            <figure><img src="{% static 'carrusel/image/img7.jpg' %}"></figure>
+            <figure><img src="{% static 'carrusel/image/img8.jpg' %}"></figure>
+            <figure><img src="{% static 'carrusel/image/img9.jpg' %}"></figure>
+            <figure><img src="{% static 'carrusel/image/img10.jpg' %}"></figure>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock content %}

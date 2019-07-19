@@ -1,0 +1,161 @@
+{% extends 'base/base.html' %} {% block content %}
+  <br>
+ <div>
+     <h1 align="center" id="ti">Contrato de Prestación de Servicios</h1>
+ </div>
+
+ <form method="post">
+    {% csrf_token %}
+
+    <div class="container">
+        <div class="form-group">
+            <label for="form3.Razon_social_natural.name">{{form3.Razon_social_natural.label}}</label>
+            {{form3.Razon_social_natural}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Cedula_contratante_natural.label}}</label>
+            {{form3.Cedula_contratante_natural}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Ciudad_contratante_natural.label}}</label>
+            {{form3.Ciudad_contratante_natural}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Fecha_nacimiento_contratante_natural.label}}</label>
+            {{form3.Fecha_nacimiento_contratante_natural}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Lugar_nacimiento_contratante_natural.label}}</label>
+            {{form3.Lugar_nacimiento_contratante_natural}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Razon_social_juridica_contratista.label}}</label>
+            {{form3.Razon_social_juridica_contratista}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Nit_juridica_contratista.label}}</label>
+            {{form3.Nit_juridica_contratista}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Nombre_representante_contratista.label}}</label>
+            {{form3.Nombre_representante_contratista}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Cedula_representate_contratista.label}}</label>
+            {{form3.Cedula_representate_contratista}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Actividad_profesional_contratista.label}}</label>
+            {{form3.Actividad_profesional_contratista}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Objeto_social_contratista.label}}</label>
+            {{form3.Objeto_social_contratista}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Objeto_social_contratante.label}}</label>
+            {{form3.Objeto_social_contratante}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Dedicacion_profesional_natural.label}}</label>
+            {{form3.Dedicacion_profesional_natural}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Finalidad.label}}</label>
+            {{form3.Finalidad}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Servicio_manera_general.label}}</label>
+            {{form3.Servicio_manera_general}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Servicio_prestado_contratista.label}}</label>
+            {{form3.Servicio_prestado_contratista}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Paragrafo_primero.label}}</label>
+            {{form3.Paragrafo_primero}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Contraprestacion_numeros.label}}</label>
+            {{form3.Contraprestacion_numeros}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Plazo_sugerido_dias.label}}</label>
+            {{form3.Plazo_sugerido_dias}}
+        </div>
+        <div class="form2-group">
+            <label for="">{{form3.Banco.label}}</label>
+            {{form3.Banco}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Tipo_cuenta.label}}</label>
+            {{form3.Tipo_cuenta}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Numero_cuenta.label}}</label>
+            {{form3.Numero_cuenta}}
+        </div>
+
+        <div class="form-group">
+            <label for="">{{form3.Nombre_titular.label}}</label>
+            {{form3.Nombre_titular}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Cedula_titular.label}}</label>
+            {{form3.Cedula_titular}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Tipo_con.label}}</label>
+            {{form3.Tipo_con}}
+        </div>
+        <div class="row">
+        
+        <div class="col-sm-6">
+                <label for="">{{form3.Duracion_numeros.label}}</label>
+                {{form3.Duracion_numeros}}
+            </div>
+            <div class="col-sm-6">
+                <label for="">{{form3.Anos_meses.label}}</label>
+                {{form3.Anos_meses}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Paragrafo_prueba_opcional.label}}</label>
+            {{form3.Paragrafo_prueba_opcional}}
+        </div>
+        <div class="form-group">
+            <label for="{{form3.Dias_prueba_numeros.name}}">{{form3.Dias_prueba_numeros.label}}</label>
+            {{form3.Dias_prueba_numeros}}
+        </div>
+
+        <div class="form-group">
+            <label for="{{form3.Fecha_prueba.name}}">{{form3.Fecha_prueba.label}}</label>
+            {{form3.Fecha_prueba}}
+        </div>
+        <div class="form-group">
+            <label for="">{{form3.Direccion_Fisica_contratante.label}}</label>
+            {{form3.Direccion_Fisica_contratante}}
+        </div>
+
+        <div class="form-group">
+             <label for="">{{form3.Correo_electronico_contratante.label}}</label>
+             {{form3.Correo_electronico_contratante}}
+        </div>
+     <button type="submit" class="btn btn-outline-danger btn-block mb-5">Descargar Contrato en pdf</button>
+  </div>
+          
+    
+ </form>
+
+{% endblock %}

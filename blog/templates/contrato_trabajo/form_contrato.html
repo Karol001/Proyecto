@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %} 
+{% load staticfiles %}
+{% block content %}
+<br>
+ <link rel="icon" type="image/png" href="{% static 'login/images/logito.png' %}" />
+<form style="margin-left: 30%; width: 100%;" method="post">
+<h1 align="center" id="ti">Contra de trabajo a termino indefinido</h1>
+   <br>
+    <div class="container mx-auto">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit" class="btn btn-primary btn-lg active btn-block mb-5">Descargar Contrato en pdf</button>
+</form>
+
+{% endblock %}

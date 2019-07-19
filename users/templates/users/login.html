@@ -1,0 +1,66 @@
+{% load staticfiles %}
+<html>
+
+<head>
+ <title>Inicio sesión</title>
+ <link rel="icon" type="image/png" href="{% static 'login/images/logito.png' %}" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'login/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'login/css/main.css' %}">
+</head>
+
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more" style="background-image: url({% static 'login/images/paisaje.jpg' %});"></div>
+
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+
+				<span class="login100-form-title p-b-59">
+					<img style="width:500px; height: 170px;" type="image/png" src="{% static 'login/images/logoidata.png' %}">
+				</span>
+
+				<form class="form-signin" action="{% url 'login' %}" method="post" id="login-form">{% csrf_token %}
+					<h2 class="form-signin-heading">{{ message }}</h2>
+					<div class="wrap-input100 validate-input" data-validate="Name is required">
+						<label for="id_username" class="label-input100">USUARIO</label>
+						<input type="text" name="username" id="id_username" class="input100" placeholder="usuario"
+							required autofocus>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<label for="id_password" class="label-input100">CONTRASEÑA</label>
+						<input type="password" name="password" id="id_password" class="input100"
+							placeholder="*******" required autofocus>
+						<span class="focus-input100"></span>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="remember-me"> Recordar Datos
+						</label>
+					</div>
+					<br>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button type="submit" class="login100-form-btn" value="{{ next }}">
+								Iniciar sesión
+							</button>
+						</div>
+						<a href="{% url 'register' %}" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+							Registrate
+							<i class="fa fa-long-arrow-right m-l-5"></i>
+					   </a>
+				</form>
+			</div>
+		</div> <!-- /container -->
+	</div>
+</body>
+
+</html>

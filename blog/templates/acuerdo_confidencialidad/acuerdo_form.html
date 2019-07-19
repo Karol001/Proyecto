@@ -1,0 +1,21 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% block content  %}
+
+ <link rel="icon" type="image/png" href="{% static 'login/images/logito.png' %}" />
+
+<div style="margin-left: 30%; width: 100%;" class="container">
+    
+    <form method="POST">
+       <h1 align="center" id="ti">Acuerdo de Confidencialidad y No Competencia</h1>
+        <br>
+        {% csrf_token %}
+        {{ form.as_p}}
+        <button value="Descargar Word" type="submit" class="btn btn-primary btn-lg active btn-block mb-5">
+            Descargar Acuerdo en pdf
+        </button>
+    </form>
+
+</div>
+
+{% endblock  %}
