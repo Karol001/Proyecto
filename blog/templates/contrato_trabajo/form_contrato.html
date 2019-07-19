@@ -1,14 +1,21 @@
-{% extends 'blog/base.html' %} 
+{% extends 'blog/base.html' %}
 {% load staticfiles %}
 {% block content %}
 <br>
- <link rel="icon" type="image/png" href="{% static 'login/images/logito.png' %}" />
-<form style="margin-left: 30%; width: 100%;" method="post">
-<h1 align="center" id="ti">Contra de trabajo a termino indefinido</h1>
-   <br>
-    <div class="container mx-auto">
-        {% csrf_token %} {{ form.as_p }}
-        <button type="submit" class="btn btn-primary btn-lg active btn-block mb-5">Descargar Contrato en pdf</button>
-</form>
-
+<link rel="icon" type="image/png" href="{% static 'login/images/logito.png' %}" />
+<div style="background: #15137e; width: 100%; margin-left: 30%; height: 3%;" class="border border-primary rounded">
+    <h1 style="color:#ffffff; text-align: center;" id="ti">Contra de trabajo a termino indefinido</h1>
+    <br>
+</div>
+<div style="margin-left: 30%; width: 100%;" class="border border-primary rounded">
+    <br>
+    <form method="post" style="margin-left: 3%; width: 95%;">
+    <img style="width:95px; height: 95px; margin-left: 45%;" type="image/png" src="{% static 'Regis/images/306232.png' %}">
+        <br>
+        <div class="container mx-auto">
+            {% csrf_token %} {{ form.as_p }}
+            <button type="submit" class="btn btn-primary btn-lg active btn-block mb-5">Descargar Contrato en
+                pdf</button>
+    </form>
+</div>
 {% endblock %}

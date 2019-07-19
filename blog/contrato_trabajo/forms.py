@@ -46,7 +46,7 @@ class ContratoJuridicoForm(forms.ModelForm):
             'domicilio_empleador': 'Domicilio empleador',
             'naturaleza_empleador': 'Naturaleza empleador',
             'tipo_empleador': 'Tipo de empleador',
-            'objeto_social_empleador': 'Obojeto social del empleador',
+            'objeto_social_empleador': 'Objeto social del empleador',
             'funciones_empleado': 'Funciones propias del cargo que se contrata',
         }
 

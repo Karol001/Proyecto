@@ -3,11 +3,15 @@
 {% block content  %}
 
  <link rel="icon" type="image/png" href="{% static 'login/images/logito.png' %}" />
-
-<div style="margin-left: 30%; width: 100%;" class="container">
-    
-    <form method="POST">
-       <h1 align="center" id="ti">Acuerdo de Confidencialidad y No Competencia</h1>
+<div style="background: #15137e; width: 100%; margin-left: 30%; height: 6%;" class="border border-primary rounded">
+    <h1 style="color:#ffffff; text-align: center;" id="ti">Acuerdo de Confidencialidad y No Competencia</h1>
+    <br>
+</div>
+<div style="margin-left: 30%; width: 100%;" class="border border-primary rounded">
+    <br>
+    <form method="POST" style="margin-left: 5%; width: 90%;">
+    <img style="width:95px; height: 95px; margin-left: 45%;" type="image/png" src="{% static 'Regis/images/306232.png' %}">
+       <br>
         <br>
         {% csrf_token %}
         {{ form.as_p}}
