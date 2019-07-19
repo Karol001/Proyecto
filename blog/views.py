@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .models import Post
-from django.core.files.storage import FileSystemStorage
-import os
+
 
 
 def home(request):

@@ -33,7 +33,6 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     url(r'^contratoTrabajo/', include(('blog.contrato_trabajo.urls', 'contrato'), namespace="contrato")),
     url(r"^acuerdo/", include(('blog.acuerdo.urls','acuerdo'), namespace='acuerdo')),
-    url(r"^servicio/", include(('blog.contrato_servicios.urls','contrato_servi'), namespace='contrato_servi')),
     path('', include('blog.urls')),
 ]
 

@@ -32,4 +32,9 @@ class Document_Acuerdo_Confidencialidad(models.Model):
     Telefono_receptor = models.CharField (max_length=30)
     Email_receptor= models.EmailField ()
     Fecha= models.DateField()
+
+class Datos_contratos(models.Model):
+    fecha_contrato = models.DateField()
+    nombre_contrato = models.CharField(max_length=100)
+    Usuario_contrato = models.CharField(max_length=100)
    

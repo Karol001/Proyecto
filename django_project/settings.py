@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.contrato_trabajo',
-    'blog.contrato_servicios',
     'blog.acuerdo'
 ]
 
